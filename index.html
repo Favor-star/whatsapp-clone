@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Whatsapp Clone</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="navbar">
+        <div class="icons__container">
+          <div class="traffic__lights">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <span class="single__icon">
+            <span class="icon" selected>
+              <i class="ri-message-2-fill ri-xl"></i>
+              <div class="badge">6</div></span
+            >
+            <p class="icon__label">Chats</p>
+          </span>
+          <span class="single__icon">
+            <span class="icon"><i class="ri-bubble-chart-fill ri-xl"></i></span>
+            <p class="icon__label">Updates</p>
+          </span>
+          <span class="single__icon">
+            <span class="icon"><i class="ri-group-fill ri-xl"></i></span>
+            <p class="icon__label">Commun..</p>
+          </span>
+          <span class="single__icon">
+            <span class="icon"><i class="ri-phone-fill ri-xl"></i></span>
+            <p class="icon__label">Calls</p>
+          </span>
+          <span class="single__icon">
+            <span class="icon"><i class="ri-donut-chart-fill ri-xl"></i></span>
+            <p class="icon__label">Channels</p>
+          </span>
+        </div>
+        <div class="account__icons">
+          <i class="ri-question-line ri-xl"></i>
+          <span class="account">
+            <img src="images/profile pic 4.png" alt="" />
+            <div class="yellow__dot"></div>
+          </span>
+        </div>
+      </section>
+      <section class="chats__container">
+        <div class="add__chat">
+          <i class="ri-chat-new-line ri-xl"></i>
+          <i class="ri-arrow-down-s-line ri-xl"></i>
+        </div>
+        <div class="search__input">
+          <i class="ri-search-line ri-1x"></i>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search or start a new chat"
+          />
+          <i class="ri-menu-5-fill ri-1x"></i>
+        </div>
+        <div class="chats">
+          <div class="single__chat">
+            <img
+              src="images/profile pic 1.png"
+              alt="Profile picture"
+              class="chat__img"
+            />
+            <div class="chat__title">
+              <span class="name__time">
+                <p class="chat__name">Joe</p>
+                <p class="chat__time">12:00</p>
+              </span>
+              <span class="chat__body__seen"
+                ><p class="chat__body">hahah oh man</p>
+                <i class="ri-check-double-fill"></i
+              ></span>
+            </div>
+          </div>
+          <div class="single__chat selected-chat">
+            <img
+              src="images/profile pic 2.png"
+              alt="Profile picture"
+              class="chat__img"
+            />
+            <div class="chat__title">
+              <span class="name__time">
+                <p class="chat__name">Optimus Prime</p>
+                <p class="chat__time">12:00</p>
+              </span>
+              <span class="chat__body__seen"
+                ><p class="chat__body">hahah oh man</p>
+                <i class="ri-check-double-fill"></i
+              ></span>
+            </div>
+          </div>
+          <div class="single__chat">
+            <img
+              src="images/profile pic 3.png"
+              alt="Profile picture"
+              class="chat__img"
+            />
+            <div class="chat__title">
+              <span class="name__time">
+                <p class="chat__name">Claire</p>
+                <p class="chat__time">12:00</p>
+              </span>
+              <span class="chat__body__seen"
+                ><p class="chat__body unread">hahah oh man</p>
+                <div class="unread__badge">2</div></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chat__room">
+        <div class="chat__room__header">
+          <span class="header__left">
+            <img
+              src="images/chat Profile pic.png"
+              alt=""
+              class="profile__img"
+            />
+            <span class="chat__room__title">
+              <p>RegisSaffi</p>
+              <p>Online</p>
+            </span>
+          </span>
+          <span class="header__right">
+            <i class="ri-vidicon-fill ri-xl"></i>
+            <i class="ri-phone-fill ri-xl"></i>
+            |
+            <i class="ri-search-line ri-xl"></i>
+            <i class="ri-arrow-down-s-line ri-xl"></i>
+          </span>
+        </div>
+        <div class="chat__room__body">
+          <div class="encryption">
+            <i class="ri-lock-fill"></i>
+            <p class="encryption__msg">
+              Messages are end-to-end encrypted. No one outside of this chat,
+              not even WhatsApp can read or listen to them click to learn more.
+            </p>
+          </div>
+          <div class="chat__msg__body">
+            <div class="recieved__msg">
+              Hey brother, are you still a fan of UI design? Can I show you
+              something?
+              <div class="recieved__time">12:00</div>
+            </div>
+            <div class="sent__msg">
+              Hey Regis, absolutely
+              <span class="msg__seen">
+                <span class="msg__seen__time">12:00</span
+                ><span class="msg__seen__tick">
+                  <i class="ri-check-double-fill"></i
+                ></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="chat__room__footer">
+          <i class="ri-emoji-sticker-line ri-xl"></i>
+          <i class="ri-add-line ri-2x"></i>
+          <input
+            type="text"
+            name="send-message"
+            id="send"
+            placeholder="Type a message"
+          />
+          <i class="ri-mic-fill ri-xl"></i>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
